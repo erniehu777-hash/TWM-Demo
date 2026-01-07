@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.taiwanmobile.com	TRUE	/	FALSE	1999999999	JSESSIONID	ApuZPuyuMo1X2IbjaAstQyJp
+
