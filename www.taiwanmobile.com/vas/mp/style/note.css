@@ -1,0 +1,70 @@
+/* 說明區 */
+
+#NOTEa{
+	width: 98%;
+	max-width:1000px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 1%;
+}
+#NOTEa .title {
+	font-size: 1.5em;
+	font-weight: 900;
+	color: #CD5B07;
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+#NOTEa  ul{}
+#NOTEa  li{
+	list-style-type: decimal;
+	list-style-position: outside;
+	text-indent: -1px;
+	margin-left: 16px;
+	font-size: 15px;
+	line-height: 30px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}	
+#NOTEa  li a{
+	color: #CD5B07;
+}	
+
+#NOTEa  ul ul{
+	margin-right: 0px;
+}
+#NOTEa  ul ul li{
+	list-style-type: upper-roman;
+	list-style-position: outside;
+	text-indent: -1px;
+	margin-left: 0px;
+	font-size: 15px;
+	line-height: 30px;
+	color: #666;
+}
+#NOTEa  ul ul ul{
+	margin-right: 0px;
+}
+#NOTEa  ul ul ul li{
+	list-style-type: lower-alpha;
+	list-style-position: outside;
+	text-indent: -1px;
+	margin-left: 0px;
+	font-size: 15px;
+	line-height: 30px;
+	color: #666;
+}
+#NOTEa .BannerB{
+	display:block;}
+#NOTEa .BannerS{
+	display:none;}
+	
+@media screen and (max-width: 640px) {
+	#NOTEa .BannerB{
+	display:none;}
+#NOTEa .BannerS{
+	display:block;}	
+	}
+

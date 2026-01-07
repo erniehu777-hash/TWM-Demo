@@ -1,0 +1,751 @@
+/*.profile-primary .item {
+	text-align:center;
+	margin:0;
+	padding: 0 5px;
+}*/
+main.container {
+	overflow: inherit;
+}
+.profile-primary .item .new-book-list-inner {   
+	border: 1px solid #ddd;
+	/*margin-bottom: 20px;*/
+	background:#FFF; 
+    position:relative;
+    text-decoration:none;
+    text-align:center;
+    width:100%;
+    /*overflow: hidden;*/
+}
+.profile-primary .item .new-book-list-inner:hover {
+    box-shadow:none;          
+}
+.profile-primary .item .new-book-list-inner .book-cover {
+	background-color: #fbfbfb;
+    border:0px;
+    height:220px;
+    line-height:219px;
+    text-align : center;
+    position: relative;
+}
+.profile-primary .item .new-book-list-inner .book-cover:after {
+    content : ".";
+    font-size : 0;
+    -webkit-text-size-adjust : none;
+}
+.profile-primary .item .new-book-list-inner .book-cover .book-cover-wrapper {
+	position: relative;
+	display: inline-block;
+}
+.profile-primary .item .new-book-list-inner .book-cover .zoom-in {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    z-index: 5;
+}
+.profile-primary .item .new-book-list-inner .book-cover .zoom-in i {
+	font-size: 30px;
+}
+
+.profile-primary .item .new-book-list-inner img {
+    max-width:100%;
+    max-height:220px;
+    vertical-align : middle;
+    margin:0px auto;
+    position: relative;
+    z-index: 3;
+}
+.profile-primary .item .new-book-list-inner .profile-spec {
+	margin: 10px 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.profile-primary .item .new-book-list-inner .profile-spec h1 a {
+	font-size: 18px;
+	line-height: 1.3em;
+}
+.profile-primary .item .new-book-list-inner h1 {
+    font-size:18px;
+    line-height:1.2;
+    overflow:hidden; 
+    height:42px;
+    max-height: 42px;
+    text-align:left;
+    margin: 0 0 10px;
+}
+.profile-primary .item .new-book-list-inner h1 a {
+	color:#666;
+}
+
+.profile-primary .item .new-book-list-inner .note li {
+    text-align:left;
+    color:#999;
+}
+.profile-primary .item .new-book-list-inner .note li.promotion-spec {
+	border-top: 1px solid #ddd;
+	margin-top: 8px;
+	padding-top: 8px;
+}
+
+.profile-primary .item .new-book-list-inner .note li .author,
+.profile-primary .item .new-book-list-inner .note li .press,
+.profile-primary .item .new-book-list-inner .note li .series {
+    color: #3FA7E8;
+}
+.profile-primary .item .new-book-list-inner .note li.list-price {
+	color: #666;
+}
+.profile-primary .item .new-book-list-inner .note li.list-price .through,
+.list-price .through {
+	display: inline-block;
+}
+.profile-primary .item .new-book-list-inner .note li .series i {
+	font-size: 13px;
+	margin-left: 3px;
+}
+.profile-primary .item .new-book-list-inner .action {
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+}
+.profile-primary .item .new-book-list-inner .action li {
+	width: 32%;
+	display: inline-block;
+}
+.profile-primary .item .new-book-list-inner .action li a,
+.hotsale-container-foot a,
+.profile-secondary .section-title-group p .add-cart {
+	font-size: 14px;
+	font-weight: normal;
+	display: block;
+	padding: 9px;
+	text-align: center;
+	margin-bottom: 0;
+}
+.profile-secondary .section-title-group p .add-cart:hover {
+	-webkit-filter:brightness(.8);
+}
+.profile-secondary .section-title-group p.pull-right {
+	margin-bottom: 0;
+}
+.profile-primary .item .new-book-list-inner .action li a,
+.hotsale-container-foot a {
+	font-size: 14px;
+	line-height: 1.3;
+}
+/*.profile-primary .item .new-book-list-inner .action li a span {
+	display: block;
+}*/
+.profile-secondary .section-title-group span {
+	color: #666;
+	margin-left: 10px;
+}
+.profile-secondary .section-title-group span a {
+	color: #3FA7E8;
+}
+.profile-primary .item .new-book-list-inner .action .check-now,
+.hotsale-container-foot .check-now {
+	background-color: #E44C15;
+	border: 1px solid #E44C15;
+	color: #fff;
+	
+}
+.profile-primary .item .new-book-list-inner .action .add-cart,
+.profile-primary .item .new-book-list-inner .action  .add-wish  {
+	border: 1px solid #679d2a;
+	background: #fff;
+}
+.profile-secondary .section-title-group p .add-cart {
+	border: 1px solid #679d2a;
+}
+.profile-secondary .section-title-group .triangle-right {
+	margin-right: -6px;
+}
+.btn-social {
+	position: relative;
+	text-align: left;
+	margin: 20px 10px;
+	overflow: hidden;
+}
+.profile-cover .btn-social {
+	position: relative;
+	float: left;
+	margin: 0 0 10px 4px;
+}
+.btn-social li {
+	display: block;
+	float: left;
+	margin-left: 5px;
+}
+.btn-social li:first-child {
+	margin-left: 0;
+}
+.btn-social li .btn-fb,
+.btn-social li .btn-google,
+.btn-social li .btn-line {
+	display: block;
+	width: 34px;
+	height: 34px;
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow: hidden;
+	background: url(../images/img_sprite.html) no-repeat;
+}
+.btn-social li .btn-fb {
+	background-position:  -194px 0 ;
+}
+.btn-social li .btn-google {
+	background-position:  -228px 0 ;
+}
+.btn-social li .btn-line {
+	background-position:  -262px 0 ;
+}
+/*.btn-social li .btn-preview {
+	margin-top: -27px;
+}*/
+.profile-primary .new-book-list-inner .btn {
+	margin-right: 0;
+}
+.image-modal-body img {
+	margin: 0 auto;
+	border: 8px solid #fff;
+}
+/*刊物群組*/
+.profile-primary .item .new-book-list-inner .profile-spec p.series {
+	margin: 0 0 10px;
+	font-size: inherit;
+}
+.profile-primary .profile-primary-banner {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+/*profile-secondary*/
+.profile-secondary .bookSlider {
+	margin-top: 2px;
+}
+.profile-secondary .bookSlider .owl-nav .owl-prev {
+	left: -5px;
+}
+.profile-secondary .bookSlider .owl-nav .owl-next {
+	right: -5px;
+}
+
+/*優惠活動*/
+.hotsale-container {
+	background: #fff;
+    border: #dddddd 1px solid;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.hotsale-container .hotsale-container-head,
+.hotsale-container .hotsale-container-body,
+.hotsale-container .hotsale-container-foot {
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.hotsale-container .hotsale-container-foot {
+	padding-top: 0;
+}
+.hotsale-container .hotsale-container-head {
+	border-bottom: 1px solid #ddd;
+}
+.hotsale-container .hotsale-container-head h3,
+.hotsale-container .series-contanier-body .series-title h3 {
+	font-size: 18px;
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+.hotsale-container .hotsale-container-head h3 a {
+	color: #666;
+	line-height: 1.2;
+}
+
+.hotsale-container .series-contanier-body .series-title a {
+ 	color:#3FA7E8
+ }
+ .hotsale-container .series-contanier-body .series-title a:hover {
+ 	text-decoration: underline;
+ }
+.hotsale-container .hotsale-container-head h3 .more,
+.hotsale-container .series-contanier-body .series-title h3 .more {
+	color: #3494E2;
+	font-weight: normal;
+	display: inline-block;
+	margin: 0 0 0 10px;
+	float: inherit;
+}
+.hotsale-container .hotsale-container-head .price-s2 {
+	text-align: right;
+	margin-bottom: 0;
+}
+.hotsale-container .hotsale-container-body {
+	font-size: 14px;
+}
+.hotsale-container .hotsale-container-body .hotsale-inner {
+	display: table;
+	width: 100%;
+}
+.hotsale-container .hotsale-container-body .hotsale-inner > img {
+	margin: 0 auto;
+}
+.hotsale-container .hotsale-container-body ul {
+    display: table-row;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.hotsale-container .hotsale-container-body ul li {
+	display: table-cell;
+}
+.hotsale-container .hotsale-container-body ul .item {
+    width: 30%;
+    vertical-align: middle;
+}
+.hotsale-container .hotsale-container-body ul .item .book-cover {
+    margin-right: 10px;
+    width: 100%;
+    height: 100px;
+    line-height: 74px;
+    background: #fbfbfb;
+    overflow: hidden;
+    text-align: center;
+}
+.hotsale-container .hotsale-container-body .hotsale-inner ul .item .book-cover-dual {
+	height: 130px;
+}
+.hotsale-container .hotsale-container-body ul .item .book-cover img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.hotsale-container .hotsale-container-body .txtBox {
+    display: none;
+    text-align: left !important;
+}
+.hotsale-container .hotsale-container-body ul .txt-plus {
+	color: #999;
+    width: 5%;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: middle!important;
+	padding: 0 3px;
+	text-align: center;
+}
+.hotsale-container .hotsale-container-body .txtBox,
+.hotsale-container .hotsale-container-body .txtBox-m {
+	overflow: hidden;
+}
+.hotsale-container .hotsale-container-body .txtBox-m {
+    display: block;
+    text-align: left !important;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ddd;
+}
+.hotsale-container .hotsale-container-body .txtBox-m .title {
+	display: block;
+	font-size: 14px;
+	color: #666;
+	margin: 5px 0;
+}
+.hotsale-container .hotsale-container-body .txtBox .rest,
+.hotsale-container .hotsale-container-body .txtBox-m .rest {
+ 	font-size: 12px;
+    display: table;
+    height: 1.4em;
+    margin: 4px 0;
+    color: #679d2a;
+    float: right;
+}
+.hotsale-container .hotsale-container-body .txtBox .set-sel,
+.hotsale-container .hotsale-container-body .txtBox-m .set-sel {
+ 	font-size: 12px;
+ 	color: #999;
+ 	float: left;
+ }
+ .hotsale-container .hotsale-container-body .txtBox .set-sel .form-group,
+ .hotsale-container .hotsale-container-body .txtBox-m .set-sel .form-group {
+	display: inline-block;
+	margin-bottom: 0;
+ }
+ .hotsale-container .hotsale-container-body .txtBox .set-sel .form-group .form-control,
+ .hotsale-container .hotsale-container-body .txtBox-m .set-sel .form-group .form-control {
+	height: 24px;
+	width: 95px;
+	padding: 0;
+ }
+ .hotsale-container .hotsale-container-body .book-info {
+    /*height: 140px;*/
+    overflow: hidden;
+    color: #666;
+
+ }
+
+.hotsale-container .hotsale-container-body .book-info .clips,
+.hotsale-container .hotsale-container-body .book-info .clips-unexpand {
+	max-height: 90px;
+	overflow: hidden;
+	display: block;
+}
+.hotsale-container .hotsale-container-body .book-info .clips a,
+.hotsale-container .hotsale-container-body .book-info .clips-unexpand a {
+	color: #666;
+}
+
+
+
+/*套書優惠*/
+.hotsale-container .series-contanier-body .series-cover,
+.hotsale-container .series-contanier-body .series-title {
+	display: inline-block;
+	vertical-align: top;
+}
+.hotsale-container .series-contanier-body .series-cover {
+	width: 30%;
+}
+.hotsale-container .series-contanier-body .series-cover img {
+	max-height: 180px;
+}
+.hotsale-container .series-contanier-body .series-title {
+	width: 64%;
+	margin-left: 10px;
+}
+.hotsale-container .series-contanier-body .series-title p {
+	color: #666;
+}
+.hotsale-container .series-contanier-body .series-title p.series-info {
+	height: 40px;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+.profile-tertiary .panel-body .clips {
+	max-height: 125px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.profile-tertiary .panel-body .clips,
+.profile-tertiary .panel-body .expand {
+	font-size: 15px;
+	line-height: 1.5;
+}
+.profile-tertiary .panel-body-lg .clips {
+	max-height: 700px;
+}
+.profile-tertiary .panel-body .clips img,
+.profile-tertiary .panel-body-lg .clips img,
+.profile-tertiary .panel-body .expand img,
+.profile-tertiary .panel-body-lg .expand img {
+	margin: 0 auto 10px;
+	max-width: 100%;
+}
+.profile-tertiary .panel-body .embed-responsive {
+	margin-bottom: 10px;
+}
+.hotsale-container .hotsale-container-body .book-info .clips:after,
+.profile-tertiary .panel-body .clips:after,
+.hotsale-container .hotsale-container-body .book-info .clips-unexpand:after {
+	background-color: rgba(255,255,255, 0) 0%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255, 0) 0%), to(#fff 100%));
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255, 0) 0%, #fff 100%);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255, 0) 0%, #fff 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255, 0) 0%, #fff 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255, 0) 0%, #fff 100%);
+	background-image: linear-gradient(top, rgba(255,255,255, 0) 0%, #fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgba(255,255,255, 0) 0%', endColorStr='#fff 100%');
+	position: absolute;
+	bottom: 32px;
+	left: 0;
+	right: 0;
+	height: 40px;
+	content: " ";
+	display: block;
+ }
+ .profile-tertiary .panel-body .clips:after,
+ .hotsale-container .hotsale-container-body .book-info .clips-unexpand:after  {
+ 	bottom: 0;
+ }
+.hotsale-container .hotsale-container-foot {
+	text-align: center;
+	margin: 0 auto;
+}
+.hotsale-container .hotsale-container-foot .check-now {
+	text-align: center;
+	margin: 0 auto;
+}
+/*內容介紹*/
+.profile-tertiary .panel {
+	border-radius: 0;
+	color: #666;
+	margin-bottom: 5px;
+}
+.profile-tertiary .panel .panel-title {
+	font-size: 18px;
+	color: #666;
+}
+/*訂閱表格*/
+.table-describe {
+	margin-bottom: 20px;
+}
+.table-describe table {
+	color: #666;
+	margin-bottom: -1px;
+}
+.table-describe h5 {
+	color: #679d2a;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.table-describe > table th {
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+}
+.table-describe .table-bordered > tbody > tr > th {
+	border-left: 0;
+}
+.table-describe .table-bordered {
+	border-right: 0;
+}
+.table-describe .table-bordered td a,
+.profile-primary .item .new-book-list-inner .note li a  {
+	color: #3FA7E8;
+}
+.table-describe .table-bordered td a:hover,
+.profile-primary .item .new-book-list-inner .note li a:hover {
+	text-decoration: underline;
+}
+.profile-primary .item .new-book-list-inner .profile-cover .book-cover .label-spec {
+	top: -90px;
+}
+.table-describe > table .check-now a {
+	font-size: 16px;
+    font-weight: normal;
+    display: block;
+    padding: 9px;
+    text-align: center;
+    background-color: #E44C15;
+    border: 1px solid #E44C15;
+    color: #fff;
+}
+.table-describe > table .check-now a.btn-disabled{
+	background-color: #ccc;
+	border-color: #ccc;
+}
+.table-describe-body-left,
+.table-describe-body-right {
+	padding: 5px;
+}
+.table-describe-body-left {
+    width: 100%;
+}
+.table-describe-body-left p.sale-title {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.table-describe-body-right {
+    width: 100%;
+    vertical-align: middle;
+}
+.gift-in {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    /*background-color: rgba(0,0,0,0.6);*/
+    /*color: #666;*/
+    text-align: center;
+    vertical-align: middle;
+}
+.gift-in i {
+	font-size: 20px;
+}
+
+
+ /* ______________________________________________________
+ mobile >480
+ ______________________________________________________ */
+ @media (min-width: 400px) {
+ 	.hotsale-container .series-contanier-body .series-title p.series-info {
+ 		height: 100px;
+ 	}
+ }
+ @media (min-width: 480px) {
+ 	.profile-primary .item .new-book-list-inner .action li a,
+ 	.hotsale-container-foot .check-now {
+ 		font-size: 16px;
+ 	}
+ 	/*.profile-primary .item .new-book-list-inner .action li a span {
+ 		display: inline;
+ 	}*/
+ 	.hotsale-container .hotsale-container-body .hotsale-inner ul .item .book-cover {
+ 		height: 140px;
+ 	}
+ 	.hotsale-container .hotsale-container-body .hotsale-inner ul .item .book-cover-dual {
+ 		height: 180px;
+ 	}
+ 	.hotsale-container .series-contanier-body .series-cover {
+		width: 127px;
+	}
+	.hotsale-container .series-contanier-body .series-title {
+		width: 66%;
+	}
+	.hotsale-container .series-contanier-body .series-title p.series-info {
+ 		height: 140px;
+ 	}
+ }
+  @media (min-width: 640px) {
+	.hotsale-container .series-contanier-body .series-title {
+		width: 75%;
+	}
+	.hotsale-container .series-contanier-body .series-title p.series-info {
+ 		height: 160px;
+ 	}
+  }
+ /* ______________________________________________________
+ tablet >768
+ ______________________________________________________ */
+ @media (min-width: 768px) {
+ 	.profile-primary .item .new-book-list-inner .book-cover {
+ 		margin-bottom: 10px;
+ 	}
+ 	.profile-primary .item .new-book-list-inner .profile-spec {
+ 		margin-bottom: 0;
+ 		float: left;
+ 	}
+ 	.profile-primary .item .new-book-list-inner .profile-cover {
+ 		width: 28%;
+ 		float: left;
+ 	}
+ 	.profile-primary .item .new-book-list-inner .profile-spec {
+ 		width: 68%;
+ 	}
+ 	/*IE10 hack*/
+ 	.profile-primary .item .new-book-list-inner .profile-spec {
+ 		float: right \9;
+ 		margin: 10px 5px 0 0 \9;
+ 	}
+ 	/*IE11 hack*/
+ 	*::-ms-backdrop, .profile-primary .item .new-book-list-inner .profile-spec {
+ 		float: right;
+ 		margin: 10px 5px 0 0;
+ 	}
+ 	.profile-primary .item .new-book-list-inner .action li a {
+ 		font-size: 16px;
+ 	}
+ 	.profile-primary .item .new-book-list-inner h1 {
+ 		font-size: 18px;
+ 		height: 44px;
+ 		line-height: 1.2;
+ 	}
+ 	/*.hotsale-container .hotsale-container-body .txtBox {
+		display: block;
+ 	}*/
+ 	.hotsale-container .hotsale-container-body .txtBox-m {
+ 		width: 30%;
+ 		float: left;
+ 		border-bottom: none;
+ 	}
+ 	.hotsale-container .hotsale-container-body .txtBox-m-dual {
+		width: 47.5%;
+ 	}
+ 	.hotsale-container .hotsale-container-body .txt-plus-blank {
+ 		display: block;
+ 		float: left;
+ 		width: 5%;
+ 		height: 1px;
+ 	}
+ 	.hotsale-container .hotsale-container-body .txtBox-m .title {
+ 		height: 37px;
+ 		overflow: hidden;
+ 	}
+ 	.hotsale-container .hotsale-container-body .txtBox-m .rest,
+ 	.hotsale-container .hotsale-container-body .txtBox-m .set-sel {
+ 		float: none;
+ 	}
+ 	.hotsale-container .hotsale-container-body .txtBox-m .set-sel .form-group .form-control {
+ 		width: 60px;
+ 	}
+ 	.hotsale-container .hotsale-container-body .book-info {
+	    padding-left: 0;
+	}
+	.hotsale-container .hotsale-container-body .book-info .clips,
+	.hotsale-container .hotsale-container-body .book-info .clips-unexpand {
+		max-height: 180px;
+	}
+	.hotsale-container .hotsale-container-body .book-info-dual .clips,
+	.hotsale-container .hotsale-container-body .book-info-dual .clips-unexpand {
+		min-height: 220px;
+	}
+	.profile-secondary .profileSlider {
+		left: -5px;
+	}
+	/*雜誌訂閱表格*/
+	.table-describe-body {
+		display: table;
+		width: 100%;
+	}
+	.table-describe-body-left,
+	.table-describe-body-right {
+		display: table-cell;
+		table-layout: fixed;
+	}
+	.table-describe-body-left {
+	    width: 66.66666667%;
+	}
+	.table-describe-body-right {
+	    width: 33.33333333%;
+	}
+	/*套書優惠*/
+	.hotsale-container .series-contanier-body .series-title {
+		width: 73%;
+	}
+	.hotsale-container .series-contanier-body .series-title .check-now {
+		width: 25%;
+	}
+}
+ /* ______________________________________________________
+ desktop>992
+ ______________________________________________________ */
+ @media (min-width: 992px) {
+ 	.profile-primary .item .new-book-list-inner .profile-cover {
+ 		width: 22%;
+ 	}
+ 	.profile-primary .item .new-book-list-inner .profile-spec {
+ 		width: 75%;
+ 	}
+ 	.hotsale-container .hotsale-container-foot .check-now {
+ 		float: right;
+ 	}
+ 	/*套書優惠*/
+	.hotsale-container .series-contanier-body .series-title {
+		width: 79%;
+	}
+ }
+  /* ______________________________________________________
+ desktop>1200
+ ______________________________________________________ */
+ @media (min-width: 1200px) {
+ 	.profile-primary .item .new-book-list-inner .profile-cover {
+ 		width: 18%;
+ 	}
+ 	.profile-primary .item .new-book-list-inner .profile-spec {
+ 		width: 78%;
+ 	}
+ 	/*套書優惠*/
+	.hotsale-container .series-contanier-body .series-title {
+		width: 83%;
+	}
+ }
