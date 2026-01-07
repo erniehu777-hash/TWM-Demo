@@ -1,0 +1,1 @@
+function isCrawlerAgent(){var e=new RegExp("(googlebot/|bot|Googlebot-Mobile|Googlebot-Image|Google favicon|Mediapartners-Google|bingbot|slurp|Chrome-Lighthouse|GTmetrix)","i"),o=navigator.userAgent;return e.test(o)?(console.log("the user agent is a crawler!"),!0):(console.log("the user agent is not a crawler!"),!1)}
