@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors TWM B&C Kassey
+ * @date    2020-11-11
+ * @version 1.1
+ */
+.btn-next:after {
+    display: none;
+}
+.twm-table-body-cell .btn-next:after, .member-left .btn-next:after, .service-box-group .btn-next:after{
+    display: inherit;
+}
+
+/**/
+@media screen and (min-width: 0px) and (max-width: 640px) { 
+	.table-mobile {
+        min-width: 900px;
+        max-width: 1100px;
+	}
+}
