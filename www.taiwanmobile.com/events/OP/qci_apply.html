@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>網路加速申請 - 台灣大哥大</title>
+    <meta name="description" content="申請網路加速服務" />
+    <link rel="shortcut icon" type="image/ico" href="../../bp-include/Y22/img/ico/favicon59b4.ico?v=20220223">
+    <link rel="stylesheet" href="../../bp-include/Y22/css/vendor.min3244.css?v=20220518">
+    <link rel="stylesheet" type="text/css" href="../../bp-include/Y22/css/twm-global-styles.min59b4.css?v=20220223">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bp-include/Y22/css/base.min59b4.css?v=20220223">
+    <link rel="stylesheet" type="text/css" href="../../bp-include/Y22/css/header.min4ff9.css?v=20240604">
+    <link rel="stylesheet" type="text/css" href="../../bp-include/Y22/css/footer.min59b4.css?v=20220223">
+    <link rel="stylesheet" type="text/css" href="../../bp-include/Y22/css/twm-fix59b4.css?v=20220223">
+    <link rel="stylesheet" type="text/css" href="../../bp-include/Y22/css/littlemy8770.css?v=20240514" />
+    <style>
+        .qci-apply-container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .qci-apply-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .qci-form-group {
+            margin-bottom: 25px;
+        }
+        .qci-form-label {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .qci-form-input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .qci-form-input:focus {
+            outline: none;
+            border-color: #FF6100;
+        }
+        .qci-submit-btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            background: #FF6100;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        .qci-submit-btn:hover {
+            background: #e55500;
+        }
+        .qci-submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .qci-message-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+        .qci-message-overlay.show {
+            display: flex;
+        }
+        .qci-message-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 400px;
+            margin: 20px;
+        }
+        .qci-message-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .qci-message-text {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .qci-message-btn {
+            padding: 12px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            background: #FF6100;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .qci-message-btn:hover {
+            background: #e55500;
+        }
+        @media (max-width: 768px) {
+            .qci-apply-container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            .qci-apply-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="twm-wrapper" id="app">
+        <script> var forward_url = "qci_apply.html"; </script>
+        <script> 
+            var login_url= "https://oauth.taiwanmobile.com/MemberOAuth/authPageLogin?response_type=code&client_id=bpap&redirect_uri=https%3A%2F%2Fwww.taiwanmobile.com%2Fcs%2Fauth%2FsetUserProfile.htm&state=eyJmcm9tQ2giOiJXRUIiLCJlbmNvZGVfZm9yd2FyZF91cmwiOiJhSFIwY0hNNkx5OTNkM2N1ZEdGcGQyRnViVzlpYVd4bExtTnZiUzlwYm1SbGVDNW9kRzFzIn0"; 
+            var personalCode = "";
+        </script>
+        <script>
+            var isLogin = false;
+            function login(){ 
+                window.location.href = login_url+encodeURIComponent(forward_url);
+            };
+        </script>
+
+        <!-- Header Start -->
+        <div id="temRenderHeaderVersionRoot"></div>
+        <!-- Header End -->
+
+        <!-- Wrapper Start -->
+        <div id="wrapper">
+            <main id="main" class="twm-page-content archive -v2">
+                <div class="container">
+                    <div class="qci-apply-container">
+                        <h1 class="qci-apply-title">網路加速申請</h1>
+                        <form id="qciApplyForm">
+                            <div class="qci-form-group">
+                                <label class="qci-form-label" for="phoneNumber">申裝門號</label>
+                                <input 
+                                    type="text" 
+                                    id="phoneNumber" 
+                                    name="phoneNumber" 
+                                    class="qci-form-input" 
+                                    placeholder="請輸入門號"
+                                    required
+                                />
+                            </div>
+                            <div class="qci-form-group">
+                                <label class="qci-form-label" for="idNumber">證號</label>
+                                <input 
+                                    type="text" 
+                                    id="idNumber" 
+                                    name="idNumber" 
+                                    class="qci-form-input" 
+                                    placeholder="請輸入證號"
+                                    required
+                                />
+                            </div>
+                            <button type="submit" class="qci-submit-btn">送出</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- Wrapper End -->
+
+        <!-- Message Overlay -->
+        <div class="qci-message-overlay" id="qciMessageOverlay">
+            <div class="qci-message-box">
+                <div class="qci-message-icon">✓</div>
+                <div class="qci-message-text">申請已送出 , 請稍後</div>
+                <button class="qci-message-btn" onclick="closeQciMessage()">確定</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="v2-twm-global-footer" class="v2-o-footer"></footer>
+    </div>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP56Z46" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- V2 - SVG - Start -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" aria-hidden="true" id="__SVG_SPRITE_NODE__">
+      <symbol id="menu-hamburger" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 9h18v2H7V9Zm0 5.8h18v2H7v-2Zm1 5.8H7v2h18v-2H8Z" fill="currentColor" />
+      </symbol>
+      <symbol id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="m12.4247 4.70427.5303-.53033-1.0606-1.06066-.5304.53033L8.15525 6.8524 4.94646 3.64361l-.53033-.53033-1.06066 1.06066.53033.53033 3.20879 3.20879L3.8858 11.1218l-.53033.5304 1.06066 1.0606.53033-.5303 3.20879-3.20878L11.364 12.1825l.5304.5303 1.0606-1.0606-.5303-.5304-3.20879-3.20874 3.20879-3.20879Z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="circle-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12.9765 15.75h-1.9457v-4.9183h1.9457V15.75zM13.1764 8.56615c0 .61304-.493 1.06616-1.1594 1.06616-.6797 0-1.1728-.45312-1.1728-1.06616 0-.63969.4931-1.06615 1.1728-1.06615.6664 0 1.1594.42646 1.1594 1.06615z" fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 12c0 4.9706-4.0294 9-9 9-4.97056 0-9-4.0294-9-9 0-4.97056 4.02944-9 9-9 4.9706 0 9 4.02944 9 9zm-.9 0c0 4.4735-3.6265 8.1-8.1 8.1-4.47351 0-8.1-3.6265-8.1-8.1 0-4.47351 3.62649-8.1 8.1-8.1 4.4735 0 8.1 3.62649 8.1 8.1z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path d="m10.5 13-5-5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+      </symbol>
+      <symbol id="right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path d="m5.5 3 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+      </symbol>
+    </svg>
+    <!-- V2 - SVG - End -->
+
+    <script src="../../bp-include/Y22/js/jquery-3.6.1.minf968.js?v=20221128"></script>
+    <script src="../../bp-include/Y22/js/jquery-migrate-3.4.0.minf968.js?v=20221128"></script>
+    <script>
+        var gtmId = "GTM-PP56Z46";
+        var isMember = true;
+    </script>
+    <script>
+        <!-- Google Tag Manager -->
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',gtmId);
+        <!-- End Google Tag Manager -->
+    </script>
+    <script src="../../bp-include/Y22/js/vendor.min59b4.js?v=20220223"></script>
+    <script src="../../bp-include/Y22/js/main.min59b4.js?v=20220223"></script>
+    <script src="../../bp-include/Y22/js/libsfa45.js?v=20240221"></script>
+    <script src="../../bp-include/Y22/js/utils.mine862.js?v=20240710"></script>
+    <script src="../../bp-include/Y22/js/v2_headerfa45.js?v=20240221"></script>
+    <script src="../../bp-include/Y22/js/v2_footer59b4.js?v=20220223"></script>
+
+    <script>
+        // QCI 申請表單處理
+        document.getElementById('qciApplyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var idNumber = document.getElementById('idNumber').value;
+            
+            // 驗證表單
+            if (!phoneNumber || !idNumber) {
+                alert('請填寫所有欄位');
+                return;
+            }
+            
+            // 顯示提示訊息
+            showQciMessage();
+        });
+        
+        function showQciMessage() {
+            document.getElementById('qciMessageOverlay').classList.add('show');
+        }
+        
+        function closeQciMessage() {
+            document.getElementById('qciMessageOverlay').classList.remove('show');
+            // 可選：重置表單
+            // document.getElementById('qciApplyForm').reset();
+        }
+        
+        // 點擊遮罩層關閉訊息
+        document.getElementById('qciMessageOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQciMessage();
+            }
+        });
+    </script>
+</body>
+</html>
