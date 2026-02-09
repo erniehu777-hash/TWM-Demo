@@ -842,11 +842,11 @@ function login(){
                       <p class="v2-o-header__sitemap-function-link-text">智能客服</p>
                     </a>
             -->
-                    <a class="v2-o-header__sitemap-function-link" href="javascript:void(0);" onclick="showQCIApplication(); return false;">
+                    <a class="v2-o-header__sitemap-function-link" href="javascript:void(0);" onclick="showNetworkAccelerationApplication(); return false;">
                       <div class="v2-o-header__sitemap-function-link-icon">
                         <svg><use xlink:href="#circle-info"></use></svg>
                       </div>
-                      <p class="v2-o-header__sitemap-function-link-text" style="font-size: 0.9em;">我要申請 QCI (QoS Class Identifier)</p>
+                      <p class="v2-o-header__sitemap-function-link-text" style="font-size: 0.9em;">我要申請網路加速</p>
                     </a>
                     <a class="v2-o-header__sitemap-function-link" href="../../mobile/storelbs/lbs.html" target="_blank" @click="sendGaEvent('網站天地','表頭點擊','找門市');">
                       <div class="v2-o-header__sitemap-function-link-icon">
@@ -921,9 +921,9 @@ function login(){
 
 
 
-      <!-- QCI 申請頁面 Start -->
-      <div id="qci-application-page" style="display: none; position: relative; z-index: 1;">
-        <main id="main-qci" class="twm-page-content archive -v2">
+      <!-- 網路加速申請頁面 Start -->
+      <div id="network-acceleration-application-page" style="display: none; position: relative; z-index: 1;">
+        <main id="main-network-acceleration" class="twm-page-content archive -v2">
           <div class="container" style="max-width: 800px; margin: 50px auto; padding: 40px;">
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 40px; position: relative;">
               <button onclick="backToMainPage()" style="position: absolute; top: 20px; left: 20px; background: none; border: none; cursor: pointer; font-size: 16px; color: #666; padding: 5px 10px;" title="返回">
@@ -932,9 +932,9 @@ function login(){
                 </svg>
                 返回
               </button>
-              <h2 style="font-size: 16.8px; color: #333; margin-top: 50px; margin-bottom: 30px; text-align: center; line-height: 1.8;">QCI (QoS Class Identifier) 申請</h2>
+              <h2 style="font-size: 16.8px; color: #333; margin-top: 50px; margin-bottom: 30px; text-align: center; line-height: 1.8;">我要申請網路加速</h2>
               
-              <form id="qci-application-form" onsubmit="submitQCIApplication(event); return false;">
+              <form id="network-acceleration-application-form" onsubmit="submitNetworkAccelerationApplication(event); return false;">
                 <div style="margin-bottom: 25px;">
                   <label for="phone-number" style="display: block; font-size: 16px; color: #333; margin-bottom: 8px; font-weight: 500;">申裝門號 <span style="color: #ff6100;">*</span></label>
                   <input 
@@ -977,7 +977,7 @@ function login(){
           </div>
         </main>
       </div>
-      <!-- QCI 申請頁面 End -->
+      <!-- 網路加速申請頁面 End -->
 
       <main id="main" class="twm-page-content archive -v2">
         <div>
@@ -1716,8 +1716,8 @@ function login(){
       }else window.location.href= sURL;
   }
 
-    // 顯示 QCI 申請頁面
-    function showQCIApplication(){
+    // 顯示網路加速申請頁面
+    function showNetworkAccelerationApplication(){
       // 關閉會員選單
       try {
         if(typeof menuTabFunction !== 'undefined' && menuTabFunction){
@@ -1770,20 +1770,20 @@ function login(){
       if(document.documentElement) document.documentElement.scrollTop = 0;
       if(document.body) document.body.scrollTop = 0;
       
-      // 隱藏主內容，顯示 QCI 申請頁面
+      // 隱藏主內容，顯示網路加速申請頁面
       var mainContent = document.getElementById('main');
-      var qciPage = document.getElementById('qci-application-page');
+      var networkAccelerationPage = document.getElementById('network-acceleration-application-page');
       
-      if(mainContent && qciPage){
+      if(mainContent && networkAccelerationPage){
         // 先隱藏主內容
         mainContent.style.display = 'none';
         
         // 使用 setTimeout 確保選單關閉動畫完成後再顯示頁面
         setTimeout(function(){
-          // 顯示 QCI 申請頁面
-          qciPage.style.display = 'block';
-          qciPage.style.visibility = 'visible';
-          qciPage.style.opacity = '1';
+          // 顯示網路加速申請頁面
+          networkAccelerationPage.style.display = 'block';
+          networkAccelerationPage.style.visibility = 'visible';
+          networkAccelerationPage.style.opacity = '1';
           
           // 再次確保滾動到頁面頂部
           window.scrollTo(0, 0);
@@ -1791,7 +1791,7 @@ function login(){
           if(document.body) document.body.scrollTop = 0;
           
           // 強制重新計算佈局
-          if(qciPage.offsetHeight) qciPage.offsetHeight;
+          if(networkAccelerationPage.offsetHeight) networkAccelerationPage.offsetHeight;
           
           // 使用 requestAnimationFrame 確保 DOM 更新後再滾動
           requestAnimationFrame(function(){
@@ -1800,20 +1800,20 @@ function login(){
             if(document.body) document.body.scrollTop = 0;
             
             // 再次確保頁面可見
-            qciPage.style.display = 'block';
-            qciPage.style.visibility = 'visible';
+            networkAccelerationPage.style.display = 'block';
+            networkAccelerationPage.style.visibility = 'visible';
             
-            // 滾動到 QCI 頁面頂部
-            if(qciPage.offsetTop !== undefined){
-              window.scrollTo(0, qciPage.offsetTop);
+            // 滾動到網路加速頁面頂部
+            if(networkAccelerationPage.offsetTop !== undefined){
+              window.scrollTo(0, networkAccelerationPage.offsetTop);
             }
           });
         }, 500);
       }
     }
 
-    // 提交 QCI 申請表單
-    function submitQCIApplication(event){
+    // 提交網路加速申請表單
+    function submitNetworkAccelerationApplication(event){
       event.preventDefault();
       
       var phoneNumber = document.getElementById('phone-number').value;
@@ -1826,7 +1826,7 @@ function login(){
       }
       
       // 顯示提示訊息
-      showQCIApplicationMessage();
+      showNetworkAccelerationApplicationMessage();
       
       // 這裡可以添加實際的提交邏輯，例如發送 AJAX 請求
       // 目前僅顯示提示訊息
@@ -1837,10 +1837,10 @@ function login(){
     // 返回主頁面
     function backToMainPage(){
       var mainContent = document.getElementById('main');
-      var qciPage = document.getElementById('qci-application-page');
+      var networkAccelerationPage = document.getElementById('network-acceleration-application-page');
       
-      if(mainContent && qciPage){
-        qciPage.style.display = 'none';
+      if(mainContent && networkAccelerationPage){
+        networkAccelerationPage.style.display = 'none';
         mainContent.style.display = 'block';
         
         // 滾動到頁面頂部
@@ -1849,10 +1849,10 @@ function login(){
     }
 
     // 顯示申請已送出的提示訊息
-    function showQCIApplicationMessage(){
+    function showNetworkAccelerationApplicationMessage(){
       // 創建提示訊息元素
       var messageDiv = document.createElement('div');
-      messageDiv.id = 'qci-message';
+      messageDiv.id = 'network-acceleration-message';
       messageDiv.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 30px 50px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 10000; text-align: center; min-width: 300px;';
       
       var messageText = document.createElement('p');
@@ -1865,7 +1865,7 @@ function login(){
       closeBtn.onclick = function(){
         document.body.removeChild(messageDiv);
         // 可選：重置表單
-        document.getElementById('qci-application-form').reset();
+        document.getElementById('network-acceleration-application-form').reset();
       };
       
       messageDiv.appendChild(messageText);
@@ -1873,7 +1873,7 @@ function login(){
       
       // 添加背景遮罩
       var overlay = document.createElement('div');
-      overlay.id = 'qci-message-overlay';
+      overlay.id = 'network-acceleration-message-overlay';
       overlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999;';
       overlay.onclick = function(){
         document.body.removeChild(overlay);
